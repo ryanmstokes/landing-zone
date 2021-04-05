@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div class="content">
     <div class="inner">
-      <Logo />
+      <Logo class="logo" />
       <h1 class="title">
         Landing Zone
       </h1>
@@ -29,23 +29,26 @@ export default Vue.extend({})
 </script>
 
 <style>
-.container {
-@apply flex h-screen animate-fade-in;
+.content {
+@apply h-screen flex animate-fade-in;
 }
 
 .inner{
-  @apply m-auto;
+  @apply m-auto text-center;
 }
 
+.logo{
+  @apply bg-gray-200 inline-block;
+}
 .title {
-  @apply text-5xl font-serif block text-center font-thin text-gray-400 leading-5;
+  @apply text-5xl font-sans block text-gray-400 leading-5 mt-10;
 }
 
 .subtitle {
-  @apply font-light text-2xl text-center text-gray-300 w-1/2;
+  @apply font-light text-2xl mx-auto text-gray-300 w-6/12 mt-8;
 }
 
 .links {
-  @apply text-center;
+  @apply text-center mt-8;
 }
 </style>
