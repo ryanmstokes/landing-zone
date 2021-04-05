@@ -1,10 +1,13 @@
 <template>
   <div class="container">
-    <div>
+    <div class="inner">
       <Logo />
       <h1 class="title">
-        beast-of-the-east-campers
+        Landing Zone
       </h1>
+      <p class="subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -12,15 +15,7 @@
           rel="noopener noreferrer"
           class="button--green"
         >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
+          Contact us
         </a>
       </div>
     </div>
@@ -34,47 +29,23 @@ export default Vue.extend({})
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
 .container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
+@apply flex h-screen animate-fade-in;
 }
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+
+.inner{
+  @apply m-auto;
 }
 
 .title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+  @apply text-5xl font-serif block text-center font-thin text-gray-400 leading-5;
 }
 
 .subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+  @apply font-light text-2xl text-center text-gray-300 w-1/2;
 }
 
 .links {
-  padding-top: 15px;
+  @apply text-center;
 }
 </style>
