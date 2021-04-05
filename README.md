@@ -1,6 +1,10 @@
-# beast-of-the-east-campers
+# Web application and templating system
 
-## Build Setup
+<img src="./git-images/logo.svg">
+
+This is a repository for a web application templating system which uses Nuxt, Composition API, Vuex, Storybook, composition API, Typescript, and Jest.
+
+## The Project is built and packaged with Yarn
 
 ```bash
 # install dependencies
