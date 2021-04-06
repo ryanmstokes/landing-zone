@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <div class="inner">
-      <Logo class="logo" />
+      <Logo />
       <h1 class="title">
         Landing Zone
       </h1>
@@ -24,7 +24,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-
+var blah;
 export default Vue.extend({})
 </script>
 
@@ -37,9 +37,6 @@ export default Vue.extend({})
   @apply m-auto text-center;
 }
 
-.logo{
-  @apply bg-gray-200 inline-block;
-}
 .title {
   @apply text-5xl font-sans block text-gray-400 leading-5 mt-10;
 }
