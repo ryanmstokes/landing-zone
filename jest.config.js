@@ -8,7 +8,8 @@ module.exports = {
     'ts',
     'js',
     'vue',
-    'json'
+    'json',
+    'tsx'
   ],
   transform: {
     "^.+\\.ts$": "ts-jest",
