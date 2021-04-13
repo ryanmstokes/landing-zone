@@ -1,4 +1,4 @@
-# Landing Page template - Nuxt, Typescript, Vue3 Composition API, Vuex, Storybook, Jest and Vue Test Utils
+# Landing Page Template - Nuxt, Typescript, Vue3 Composition API, Vuex, Storybook, Jest and Vue Test Utils
 
 <img src="./git-images/logo.svg">
 
