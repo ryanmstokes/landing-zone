@@ -6,7 +6,7 @@
 
 https://classic.yarnpkg.com/en/docs/
 
-## Installation
+## Yarn Commands
 
 ```bash
 # install dependencies
