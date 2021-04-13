@@ -1,8 +1,6 @@
-# Web application and templating system
+# Landing Page template - Nuxt, Typescript, Vue3 Composition API, Vuex, Storybook, Jest and Vue Test Utils
 
 <img src="./git-images/logo.svg">
-
-This is a repository for a web application templating system which uses Nuxt, the Vue 3 Composition API, Vuex, Storybook, composition API, Typescript, and Jest.
 
 ### The Project is built and packaged with Yarn
 
