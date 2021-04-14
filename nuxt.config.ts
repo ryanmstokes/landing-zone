@@ -1,4 +1,6 @@
-export default {
+import { NuxtConfig } from "@nuxt/types";
+
+const config: NuxtConfig = {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -31,6 +33,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    'nuxt-typed-vuex',
     '@nuxtjs/composition-api',
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
@@ -44,5 +47,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+  /**transpile: [/@vue[\\/]composition-api/],*/
 }
+export default config;

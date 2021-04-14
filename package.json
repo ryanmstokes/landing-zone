@@ -14,7 +14,8 @@
     "@nuxtjs/composition-api": "^0.22.4",
     "@types/jest": "^26.0.22",
     "core-js": "^3",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.15.3",
+    "nuxt-typed-vuex": "^0.1.22"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.3",

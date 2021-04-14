@@ -1,7 +1,9 @@
 <template>
   <main class="content">
     <div class="inner">
-      <section class="logo flex"><Img v-bind="image" /></section>
+      <section class="logo flex">
+        <lz-img v-bind="logo" />
+      </section>
       <h1 class="title">Landing Zone</h1>
       <p class="subtitle">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -23,7 +25,12 @@
 
 <script lang="ts">
 /** Import utilities from Vue3 Composition API */
-import { defineComponent } from "@vue/composition-api";
+import {
+  defineComponent,
+  wrapProperty,
+  computed,
+  ComputedRef,
+} from "@nuxtjs/composition-api";
 
 /** Import shared Typescript interfaces */
 import { Image } from "@/typescript/interfaces";
@@ -31,9 +38,8 @@ import { Image } from "@/typescript/interfaces";
 /** Import Sizes from Tailwind map configuration defaults */
 import { Sizes } from "~/tailwind/tailwind-map-config";
 
-/** Import the Logo Image */
-const logoImagePath = require("~/assets/logo.svg") as string;
-
+/** Create reference to typed vuex accessor */
+const useAccessor = wrapProperty("$accessor", false);
 /** Index */
 /**
  * Setup the Index page of the application
@@ -44,12 +50,18 @@ const logoImagePath = require("~/assets/logo.svg") as string;
 export default defineComponent({
   name: "Index",
   setup() {
-    const image: Image = {
+    /** typedStore = typed-vuex store  */
+    const typedStore = useAccessor();
+
+    let logoPath = computed((): string => typedStore.logo);
+
+    const logo: Image = {
       title: "Logo",
-      path: logoImagePath,
+      path: require("~/assets/" + logoPath.value),
       styles: Sizes.xs + " w-auto bg-gray-200",
     };
-    return { image };
+
+    return { logo };
   },
 });
 </script>

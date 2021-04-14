@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import Img from '@/components/img/Img.vue'
+import lzImg from '@/components/lz-img/lz-img.vue'
 import { Image } from  '@/typescript/interfaces';
 
 /** Img Component Tests */
@@ -7,7 +7,7 @@ import { Image } from  '@/typescript/interfaces';
  * Loads an image and checks that it exists in the DOM
  * @test Check the image component mounted and prop are equal.
  */
-describe('Default Image component', () => {
+describe('lz-img component', () => {
 
   /** Check the image component mounted */
   /**
@@ -26,7 +26,7 @@ describe('Default Image component', () => {
       }
     };
 
-    let wrapper = mount(Img, {
+    let wrapper = mount(lzImg, {
       propsData: props("Logo", "~/assets/logo.svg", "w-1/2 w-auto bg-gray-200")
     })
 

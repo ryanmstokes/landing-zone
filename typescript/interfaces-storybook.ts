@@ -17,7 +17,6 @@ interface StoryItem {
  *
  * @interface Variant
  * @member {string} title Title of the style variant
- * @member {string} title String passed to prop to set the variant
  */
 interface Variant {
   [name: string]: string

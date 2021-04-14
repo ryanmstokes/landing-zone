@@ -1,18 +1,18 @@
 /** Import the Nuxt Image component  */
-import Img from './Img.vue';
+import lzImg from '~/components/lz-img/lz-img.vue';
 
 /** Import shared Typeface interfaces */
 import { Image } from '@/typescript/interfaces';
 
 /** Import Storybook resources */
 import { Story } from '@storybook/vue';
-import { storyItem, constructedHTMLwithArgs, constructedStoryBookVariants, constructedImgOptions } from '@/helpers/storybook';
+import { storyItem, imgOptions, imgVariants, variantList } from '@/storybook/';
 
 /** Import tailwind map config for defaults (e.g. image sizes) */
 import { Sizes } from '~/tailwind/tailwind-map-config';
 
 /** Construct the sidebar Menu Item */
-const StoryMenuItem = storyItem('Components/Image', Img);
+const StoryMenuItem = storyItem('Components/Image', lzImg);
 
 /** Export the sidebar Menu Item */
 export default StoryMenuItem;
@@ -26,11 +26,11 @@ export default StoryMenuItem;
  * @param {string} template Compiled HTML template string
  */
 const Template: Story<Image> = (args: Image) => ({
-  components: { Img },
+  components: { lzImg },
   setup() {
     return { args };
   },
-  template: constructedHTMLwithArgs(Sizes, 'Img') as string,
+  template: variantList(Sizes, 'lz-img'),
 });
 
 /** Require the Placeholder Image to be used in the image component **/
@@ -39,7 +39,7 @@ const imagePath = require('~/assets/logo.svg') as string;
 /** Construct the Args to associate to the component */
 const variants = (imagePath: string): object => {
  return  {
-  variants: constructedStoryBookVariants(Sizes, constructedImgOptions('name', imagePath))
+  variants: imgVariants(Sizes, imgOptions('name', imagePath))
  }
 }
 

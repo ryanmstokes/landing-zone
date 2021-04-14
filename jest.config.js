@@ -2,7 +2,8 @@ module.exports = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
     '^~/(.*)$': '<rootDir>/$1',
-    '^vue$': 'vue/dist/vue.common.js'
+    '^vue$': 'vue/dist/vue.common.js',
+    '@nuxtjs/composition-api': '@nuxtjs/composition-api/lib/entrypoint.js'
   },
   moduleFileExtensions: [
     'ts',
@@ -20,5 +21,6 @@ module.exports = {
   collectCoverageFrom: [
     '<rootDir>/components/**/*.vue',
     '<rootDir>/pages/**/*.vue'
-  ]
+  ],
+  /** setupFiles: ['<rootDir>/jest-setup.ts'] */
 }
