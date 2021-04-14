@@ -2,7 +2,7 @@
   <img src="./git-images/landing-zone-logos.jpg" />
 </p>
 
-# Landing Page Template - Nuxt, Typescript, Vue3 Composition API, Vuex, Storybook, Jest and Vue Test Utils
+# Landing Page template - Nuxt, Typescript, Vue3 Composition API, Vuex, Storybook, Jest and Vue Test Utils
 
 ### The Project is built and packaged with Yarn
 
