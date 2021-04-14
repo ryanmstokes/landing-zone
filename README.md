@@ -1,3 +1,5 @@
+<img src="./git-images/landing-zone-logos.jpg">
+
 # Web application and templating system
 
 <img src="./git-images/logo.svg">
