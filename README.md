@@ -1,4 +1,6 @@
-<img src="./git-images/landing-zone-logos.jpg" style="max-width: 600px; display: block; margin: 0 auto;" />
+<div style="max-width: 600px; display: block; margin: 0 auto;">
+  <img src="./git-images/landing-zone-logos.jpg" />
+</div>
 
 # Landing Page Template - Nuxt, Typescript, Vue3 Composition API, Vuex, Storybook, Jest and Vue Test Utils
 
