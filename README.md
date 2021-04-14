@@ -63,7 +63,5 @@ Test files are located in the corresponding components directory.
 yarn test
 ```
 
-#### *Currently tests are not written in Typescript. Typescript will be incorporated into the test suite using the t-jest package in the subsequent release.
-
 
 
