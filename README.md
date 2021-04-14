@@ -1,8 +1,8 @@
-<img src="./git-images/landing-zone-logos.jpg">
+<img src="./git-images/landing-zone-logos.jpg" style="max-width: 600px; display: block; margin: 0 auto;" />
 
 # Landing Page Template - Nuxt, Typescript, Vue3 Composition API, Vuex, Storybook, Jest and Vue Test Utils
 
-<img src="./git-images/logo.svg">
+<img src="./git-images/logo.svg" />
 
 ### The Project is built and packaged with Yarn
 
