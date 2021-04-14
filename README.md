@@ -1,35 +1,9 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<img src="./git-images/landing-zone-logos.jpg">
-=======
-=======
-<img src="./git-images/landing-zone-logos.jpg" style="max-width: 600px; display: block; margin: 0 auto;" />
-=======
-<div style="max-width: 600px; display: block; margin: 0 auto;">
-  <img src="./git-images/landing-zone-logos.jpg" />
-</div>
->>>>>>> ca1f5ce... Update README.md
-=======
 <p align="center">  
   <img src="./git-images/landing-zone-logos.jpg" />
 </p>
->>>>>>> e22ab0e... Update README.md
 
->>>>>>> 15897ba... Update README.md
-# Landing Page Template - Nuxt, Typescript, Vue3 Composition API, Vuex, Storybook, Jest and Vue Test Utils
->>>>>>> d2beeec... Update README.md
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Landing Page template - Nuxt, Typescript, Vue3 Composition API, Vuex, Storybook, Jest and Vue Test Utils
-=======
-<img src="./git-images/logo.svg" />
->>>>>>> 15897ba... Update README.md
 
-=======
->>>>>>> 07448da... Update README.md
 ### The Project is built and packaged with Yarn
 
 https://classic.yarnpkg.com/en/docs/
@@ -88,8 +62,6 @@ Test files are located in the corresponding components directory.
 ```
 yarn test
 ```
-
-#### *Currently tests are not written in Typescript. Typescript will be incorporated into the test suite using the t-jest package in the subsequent release.
 
 
 
