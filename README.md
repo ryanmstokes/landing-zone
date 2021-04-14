@@ -29,7 +29,7 @@ The Universal SSR application is built with Nuxt 2.15 which has Typescript suppo
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 ## Composition API
-Nuxt 2 does not yet have built in suppoort for vue 3 or the composition API, but the application takes advantage of the new features offered by Vue 3, by importing the nuxtjs composition-api package and using a slightly differennt syntax for some declarations.
+Nuxt 2 does not yet have built in support for vue 3 or the composition API, but the application takes advantage of the new features offered by Vue 3, by importing the nuxtjs composition-api package and using a slightly differennt syntax for some declarations.
 
 https://yarnpkg.com/package/@nuxtjs/composition-api
 
@@ -42,7 +42,7 @@ and more specifically the project uses nuxt-storybook.
 
 https://storybook.nuxtjs.org/
 
-Run thee following command to launch the storybook server and view the applications components design, variations and actionns in isolation:
+Run the following command to launch the storybook server and view the applications components design, variations and actions in isolation:
 
 ```
 yarn nuxt storybook
