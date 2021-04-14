@@ -1,5 +1,6 @@
 import { mount } from '@vue/test-utils'
-import Img from '~/components/img/Img.vue'
+import Img from '@/components/img/Img.vue'
+import { Image } from  '@/typescript/interfaces';
 
 /** Img Component Tests */
 /**
@@ -17,12 +18,16 @@ describe('Default Image component', () => {
    */
   test('Does the component successfully load an image?', () => {
 
-    let wrapper = mount(Img, {
-      propsData: {
-        title: "Logo",
-        path: "~/assets/logo.svg",
-        styles: "w-1/2 w-auto bg-gray-200"
+    const props = (title: string, path: string, styles: string): Image  => {
+      return {
+        title: title,
+        path: path,
+        styles: styles
       }
+    };
+
+    let wrapper = mount(Img, {
+      propsData: props("Logo", "~/assets/logo.svg", "w-1/2 w-auto bg-gray-200")
     })
 
     /** Check the component mounted */
@@ -32,7 +37,8 @@ describe('Default Image component', () => {
     expect(wrapper.props().title).toBe('Logo');
     expect(wrapper.props().path).toBe('~/assets/logo.svg');
     expect(wrapper.props().styles).toBe('w-1/2 w-auto bg-gray-200');
-    /** Check an image has been loaded */
+
+    /** Check an image exists in the DOM */
     const img = wrapper.find('img');
     expect(img.exists()).toBe(true);
   });
