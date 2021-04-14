@@ -4,8 +4,6 @@
 
 # Landing Page Template - Nuxt, Typescript, Vue3 Composition API, Vuex, Storybook, Jest and Vue Test Utils
 
-<img src="./git-images/logo.svg" />
-
 ### The Project is built and packaged with Yarn
 
 https://classic.yarnpkg.com/en/docs/
