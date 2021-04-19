@@ -169,14 +169,17 @@ Tests are written in Typescript. Common functions used for consntructing stories
 ```
 yarn test
 ```
+
 To configure Jest edit the /jest.config.js file.
 
 On configuration of importance was the need to add the following for the nuxtjs/compoition-api to be made available to jest tests:
+
 ```
 moduleNameMapper: {
   // ...
   '@nuxtjs/composition-api': '@nuxtjs/composition-api/lib/entrypoint.js'
 }
+```
 
 <br/><br/>
 <img src="./readme-assets/tailwind-logo.jpg" />
