@@ -102,6 +102,8 @@ https://typed-vuex.roe.dev/getting-started-nuxt
 
 <br/><br/>
 <img src="./readme-assets/vuex-logo.jpg" />
+
+## VUEX State Management
 The applications state is managed with Nuxt's integrated VueX package and the **nuxt-typed-vuex package, which offers a strongly typed accessor for reading and communicating with the Vuex store.
 
 Nuxt Typed Vuex Store $accessor:
